@@ -2,7 +2,7 @@ package com.example.demoSpringBoot.api.model;
 
 public class UserModel {
 
-    private final int id; // Use final for immutable fields (like ID)
+    private final int id;
     private final String documentType;
     private final String documentNumber;
     private final String firstName;
@@ -13,7 +13,6 @@ public class UserModel {
     private final String address;
     private final String city;
 
-    // Constructor with all fields
     public UserModel(int id, String documentType, String documentNumber, String firstName,
                      String middleName, String lastName, String secondLastName,
                      String phoneNumber, String address, String city) {
@@ -29,7 +28,6 @@ public class UserModel {
         this.city = city;
     }
 
-    // Getters for all fields
     public int getId() {
         return id;
     }
